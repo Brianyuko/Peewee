@@ -14,8 +14,8 @@ class Login(Model):
 sqlite_db.connect()
 
 # Delete Data Option One
-# user = Login.get(Login.id == 4)
-# user.delete_instance()
+user = Login.get(Login.id == 4)
+user.delete_instance()
 
 # Delete Data Option Two
 Login.delete().where(Login.point < 3).execute()
